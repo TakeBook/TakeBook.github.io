@@ -5,17 +5,35 @@
 <title>Insert title here</title>
   <style type="text/css">
     h1{
-      color:blue;
+      color:#E9967A;
+      font-size:30px;
       text-align:center;
+    }
+    div{
+      font-size:18px;
+      
     }
   </style>
 </head>
 <body>
-<h1>我的第一个网站页面</h1>
-<h1>My first website page</h1>
-<h1>最初のウェブサイトのページです</h1>
-</div>
+  <h1>我的第一个网站页面</h1>
+  <h1>My first website page</h1>
+  <h1>最初のウェブサイトのページです</h1>
+  <div id="blink">
+    <p>页面更新中,尽请期待......(接受各种建议)</p>
+    <p>In updating the page, please look forward to...(accept all kinds of suggestions)</p>
+    <p>ページ更新中、ぜひご期待ください... (さまざまなアドバイスを受ける)</p>
+  </div>
 </body>
+  <script language="javascript">
+    function changeColor(){
+    var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray";
+    color=color.split("|");
+    document.getElementById("blink").style.color=color[parseInt(Math.random() * 
+    color.length)];
+    }
+    setInterval("changeColor()",200);
+  </script>
 </html>
 
 
